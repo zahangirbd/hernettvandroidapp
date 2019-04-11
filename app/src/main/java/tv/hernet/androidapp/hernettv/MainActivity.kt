@@ -1,5 +1,6 @@
 package tv.hernet.androidapp.hernettv
 
+import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -17,6 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         // Enable java script in web view
         settings.javaScriptEnabled = true
+
+        webView.setBackgroundColor(Color.TRANSPARENT)
 
         webView.loadUrl(url)
     }
